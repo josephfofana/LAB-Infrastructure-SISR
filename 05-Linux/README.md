@@ -1,15 +1,12 @@
-# 📁 `05-Linux/README.md`
-
-```markdown
 # 05 – Linux
 
 ## LAB-Infrastructure-SISR — UniService
 
 ## 1. Présentation
 
-Cette section présente l'administration du serveur Linux du laboratoire UniService.
+Le serveur Linux fait partie de l'infrastructure informatique de l'entreprise fictive UniService.
 
-L'objectif est de développer les compétences nécessaires à l'administration d'un système Linux en environnement serveur.
+Cette machine virtuelle permet de mettre en pratique l'administration d'un système Linux dans un environnement d'entreprise : configuration du système, gestion des utilisateurs et permissions, administration des services, configuration réseau et sécurisation du serveur.
 
 ---
 
@@ -41,6 +38,7 @@ Le serveur est virtualisé avec VirtualBox.
 
 Exemples :
 
+```text
 ip
 ping
 ss
