@@ -84,3 +84,18 @@ L'infrastructure est construite progressivement autour de plusieurs composants :
        GPO
         │
  Utilisateurs / Ordinateurs
+
+
+6. État
+Élément	État
+Définition du projet	🟢 Terminé
+Environnement virtuel	🟡 En cours
+Architecture	🟡 En cours
+Windows Server	🟡 En cours
+Active Directory	🟡 En cours
+Linux	🟡 En cours
+Sécurité	🔵 Prévu
+Supervision	🔵 Prévu
+Automatisation	🔵 Prévu
+Tests	🔵 Prévu
+Bilan	🔵 Prévu
