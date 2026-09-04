@@ -41,7 +41,6 @@ Le serveur est virtualisé avec VirtualBox.
 
 Exemples :
 
-```text
 ip
 ping
 ss
