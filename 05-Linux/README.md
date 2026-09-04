@@ -1,6 +1,3 @@
-
----
-
 # 📁 `05-Linux/README.md`
 
 ```markdown
