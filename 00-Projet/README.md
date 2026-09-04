@@ -16,14 +16,14 @@ L'objectif est de construire progressivement une infrastructure cohérente, fonc
 
 UniService est une PME de services composée d'environ **20 utilisateurs** répartis dans plusieurs services :
 
-| Service | Nombre d'utilisateurs |
-|---|---:|
-| Direction | 2 |
-| Administration | 5 |
-| Commercial | 6 |
-| Informatique | 4 |
-| Ressources Humaines | 3 |
-| **Total** | **20** |
+| Service             | Nombre d'utilisateurs |
+| ------------------- | --------------------: |
+| Direction           |                     2 |
+| Administration      |                     5 |
+| Commercial          |                     6 |
+| Informatique        |                     4 |
+| Ressources Humaines |                     3 |
+| **Total**           |                **20** |
 
 Cette organisation sert de base à la conception de l'infrastructure informatique.
 
@@ -33,18 +33,18 @@ Cette organisation sert de base à la conception de l'infrastructure informatiqu
 
 Le laboratoire a pour objectifs de :
 
-- Concevoir une infrastructure informatique d'entreprise
-- Déployer des systèmes Windows et Linux
-- Mettre en place un domaine Active Directory
-- Centraliser l'authentification des utilisateurs
-- Fournir automatiquement les paramètres réseau
-- Assurer la résolution des noms
-- Organiser les utilisateurs et les ordinateurs
-- Mettre en place des politiques de sécurité
-- Contrôler les accès aux ressources
-- Tester la connectivité et les services
-- Automatiser progressivement certaines tâches
-- Documenter les configurations et les procédures
+* Concevoir une infrastructure informatique d'entreprise
+* Déployer des systèmes Windows et Linux
+* Mettre en place un domaine Active Directory
+* Centraliser l'authentification des utilisateurs
+* Fournir automatiquement les paramètres réseau
+* Assurer la résolution des noms
+* Organiser les utilisateurs et les ordinateurs
+* Mettre en place des politiques de sécurité
+* Contrôler les accès aux ressources
+* Tester la connectivité et les services
+* Automatiser progressivement certaines tâches
+* Documenter les configurations et les procédures
 
 ---
 
@@ -53,12 +53,14 @@ Le laboratoire a pour objectifs de :
 Le laboratoire est réalisé dans un environnement virtualisé avec :
 
 **Hyperviseur :**
-- VirtualBox
+
+* VirtualBox
 
 **Systèmes :**
-- Windows Server
-- Windows Client
-- Linux Server
+
+* Windows Server
+* Windows Client
+* Linux Server
 
 L'environnement est volontairement isolé afin de permettre la réalisation de tests sans impact sur un réseau réel.
 
@@ -84,18 +86,27 @@ L'infrastructure est construite progressivement autour de plusieurs composants :
        GPO
         │
  Utilisateurs / Ordinateurs
+```
 
+---
 
-6. État
-Élément	État
-Définition du projet	🟢 Terminé
-Environnement virtuel	🟡 En cours
-Architecture	🟡 En cours
-Windows Server	🟡 En cours
-Active Directory	🟡 En cours
-Linux	🟡 En cours
-Sécurité	🔵 Prévu
-Supervision	🔵 Prévu
-Automatisation	🔵 Prévu
-Tests	🔵 Prévu
-Bilan	🔵 Prévu
+## 📊 État
+
+| Élément                       | État        |
+| ----------------------------- | ----------- |
+| Définition du projet          | 🟢 Terminé  |
+| Présentation d'UniService     | 🟢 Terminé  |
+| Définition des objectifs      | 🟢 Terminé  |
+| Définition de l'environnement | 🟢 Terminé  |
+| Architecture générale         | 🟡 En cours |
+| Infrastructure Windows        | 🟡 En cours |
+| Infrastructure Linux          | 🟡 En cours |
+| Active Directory              | 🟡 En cours |
+| DNS                           | 🟡 En cours |
+| DHCP                          | 🟡 En cours |
+| Sécurité                      | 🔵 Prévu    |
+| Supervision                   | 🔵 Prévu    |
+| Automatisation                | 🔵 Prévu    |
+| Tests                         | 🔵 Prévu    |
+| Documentation                 | 🟡 En cours |
+| Bilan du projet               | 🔵 Prévu    |
