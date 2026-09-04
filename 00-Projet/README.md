@@ -68,6 +68,7 @@ L'environnement est volontairement isolé afin de permettre la réalisation de t
 
 L'infrastructure est construite progressivement autour de plusieurs composants :
 
+```text
                     LAB-Infrastructure-SISR
                               │
                          UniService
