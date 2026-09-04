@@ -51,4 +51,5 @@ La solution retenue est :
 
 Le domaine du laboratoire est :
 
+```text
 uniservice.local
