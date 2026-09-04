@@ -2,54 +2,102 @@
 
 ## LAB-Infrastructure-SISR — UniService
 
-## 1. Présentation de l'entreprise
+## 1. Présentation
 
-**UniService** est une PME fictive spécialisée dans les services aux entreprises.
+Cette section présente le cahier des charges du laboratoire **LAB-Infrastructure-SISR — UniService**.
 
-L'entreprise compte environ **20 utilisateurs** répartis dans plusieurs services :
-
-| Service | Utilisateurs |
-|---|---:|
-| Direction | 2 |
-| Administration | 5 |
-| Commercial | 6 |
-| Informatique | 4 |
-| Ressources Humaines | 3 |
-| **Total** | **20** |
-
-L'entreprise souhaite disposer d'une infrastructure informatique permettant aux collaborateurs d'accéder aux ressources nécessaires à leur activité tout en assurant une administration centralisée et un niveau de sécurité adapté.
+L'objectif est de définir les besoins de l'entreprise fictive afin de déterminer les fonctionnalités et les services nécessaires à la mise en place de son infrastructure informatique.
 
 ---
 
-# 2. Problématique
+## 2. Entreprise
 
-L'infrastructure doit permettre de répondre à plusieurs besoins :
+UniService est une PME de services composée d'environ **20 utilisateurs** répartis dans plusieurs services :
 
-- Identifier et authentifier les utilisateurs
-- Administrer les comptes de manière centralisée
-- Attribuer automatiquement les paramètres réseau
-- Permettre la résolution des noms de machines et de services
-- Organiser les utilisateurs et les ordinateurs
-- Contrôler l'accès aux ressources
-- Appliquer des politiques de sécurité
-- Faciliter l'administration du parc informatique
-- Vérifier le fonctionnement des différents services
-- Prévoir des mécanismes de sauvegarde et de continuité
-- Documenter les procédures d'administration
+| Service             | Nombre d'utilisateurs |
+| ------------------- | --------------------: |
+| Direction           |                     2 |
+| Administration      |                     5 |
+| Commercial          |                     6 |
+| Informatique        |                     4 |
+| Ressources Humaines |                     3 |
+| **Total**           |                **20** |
 
 ---
 
-# 3. Besoins fonctionnels
+## 3. Besoins identifiés
 
-## 3.1 Authentification
+L'infrastructure doit permettre :
 
-Les utilisateurs doivent pouvoir s'authentifier sur un domaine centralisé.
+* L'authentification des utilisateurs
+* La gestion centralisée des comptes
+* L'attribution automatique des paramètres réseau
+* La résolution des noms
+* La gestion des postes informatiques
+* L'organisation des utilisateurs par service
+* La gestion des groupes
+* Le contrôle des accès aux ressources
+* La sécurisation des systèmes
+* La supervision de l'infrastructure
+* L'automatisation de certaines tâches
+* La réalisation de tests
 
-La solution retenue est :
+---
 
-**Active Directory Domain Services (AD DS)**
+## 4. Services nécessaires
 
-Le domaine du laboratoire est :
+Les principaux services prévus sont :
 
-```text
-uniservice.local
+* Active Directory
+* DNS
+* DHCP
+* Windows Server
+* Linux Server
+* Services de fichiers
+* Services réseau
+* Services de supervision
+
+---
+
+## 5. Contraintes
+
+Le laboratoire doit respecter plusieurs contraintes :
+
+* Utilisation d'un environnement virtualisé
+* Isolation du réseau de laboratoire
+* Utilisation de ressources matérielles limitées
+* Possibilité de reproduire les configurations
+* Documentation des manipulations
+* Possibilité de faire évoluer l'infrastructure
+
+---
+
+## 6. Sécurité
+
+La sécurité doit être intégrée progressivement dans l'infrastructure.
+
+Les principaux éléments étudiés seront :
+
+* Les politiques de mots de passe
+* Les groupes de sécurité
+* Les permissions
+* Les GPO
+* Le principe du moindre privilège
+* La sécurisation des serveurs
+* La surveillance des événements
+
+---
+
+## 7. État
+
+| Élément                          | État        |
+| -------------------------------- | ----------- |
+| Présentation de l'entreprise     | 🟢 Terminé  |
+| Identification des utilisateurs  | 🟢 Terminé  |
+| Identification des besoins       | 🟢 Terminé  |
+| Identification des services      | 🟡 En cours |
+| Identification des contraintes   | 🟢 Terminé  |
+| Besoins de sécurité              | 🟡 En cours |
+| Besoins de supervision           | 🔵 Prévu    |
+| Besoins d'automatisation         | 🔵 Prévu    |
+| Validation du cahier des charges | 🟡 En cours |
