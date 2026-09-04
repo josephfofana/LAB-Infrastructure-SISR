@@ -8,14 +8,14 @@ Cette section présente la mise en place et l'administration de l'environnement 
 
 Les services principaux étudiés sont :
 
-- Active Directory Domain Services
-- DNS
-- DHCP
-- Group Policy
-- Gestion des utilisateurs
-- Gestion des groupes
-- Organisation des unités d'organisation (OU)
-- Administration centralisée
+* Active Directory Domain Services
+* DNS
+* DHCP
+* Group Policy
+* Gestion des utilisateurs
+* Gestion des groupes
+* Organisation des unités d'organisation (OU)
+* Administration centralisée
 
 ---
 
@@ -35,9 +35,9 @@ DC1 constitue le serveur principal de l'infrastructure Windows.
 
 ### Rôles prévus
 
-- Active Directory Domain Services
-- DNS
-- DHCP
+* Active Directory Domain Services
+* DNS
+* DHCP
 
 DC1 constitue le point central de gestion du domaine.
 
@@ -49,11 +49,11 @@ L'organisation de l'annuaire doit refléter la structure de l'entreprise.
 
 Les principales OU prévues sont :
 
-- Direction
-- Administration
-- Commercial
-- Informatique
-- Ressources-Humaines
+* Direction
+* Administration
+* Commercial
+* Informatique
+* Ressources-Humaines
 
 Cette organisation permet notamment de faciliter l'application des stratégies et la gestion des comptes.
 
@@ -83,11 +83,11 @@ Les Group Policy Objects permettent de centraliser certaines configurations de s
 
 Les GPO pourront notamment être utilisées pour :
 
-- Politiques de mots de passe
-- Restrictions utilisateur
-- Configuration système
-- Paramètres de sécurité
-- Configuration des postes
+* Politiques de mots de passe
+* Restrictions utilisateur
+* Configuration système
+* Paramètres de sécurité
+* Configuration des postes
 
 Chaque GPO devra être testée avant d'être considérée comme validée.
 
@@ -111,9 +111,9 @@ DNS est indispensable au fonctionnement du domaine Active Directory.
 
 Le service permet notamment :
 
-- La résolution des noms
-- La résolution du domaine
-- La localisation des services Active Directory
+* La résolution des noms
+* La résolution du domaine
+* La localisation des services Active Directory
 
 ---
 
@@ -128,3 +128,35 @@ ping
 whoami
 gpupdate /force
 gpresult
+```
+
+Ces commandes permettent notamment de vérifier :
+
+* La configuration réseau du poste
+* La résolution DNS
+* La connectivité avec le serveur
+* L'identité de l'utilisateur connecté
+* L'application des stratégies de groupe
+* Les stratégies effectivement appliquées au poste
+
+---
+
+## 11. État
+
+| Élément                     | État        |
+| --------------------------- | ----------- |
+| Installation Windows Server | 🟡 En cours |
+| DC1                         | 🟡 En cours |
+| Active Directory            | 🟡 En cours |
+| Domaine `uniservice.local`  | 🟡 En cours |
+| DNS                         | 🟡 En cours |
+| DHCP                        | 🟡 En cours |
+| OU                          | 🔵 Prévu    |
+| Utilisateurs                | 🔵 Prévu    |
+| Groupes de sécurité         | 🔵 Prévu    |
+| GPO                         | 🔵 Prévu    |
+| Tests Active Directory      | 🔵 Prévu    |
+| Tests DNS                   | 🔵 Prévu    |
+| Tests DHCP                  | 🔵 Prévu    |
+| Administration centralisée  | 🔵 Prévu    |
+
