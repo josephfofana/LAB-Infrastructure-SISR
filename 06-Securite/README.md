@@ -1,91 +1,96 @@
-
----
-
-# 📁 `06-Securite/README.md`
-
-```markdown
 # 06 – Sécurité
 
 ## LAB-Infrastructure-SISR — UniService
 
-## 1. Présentation
+## 1. Sécurité de l'infrastructure
 
-La sécurité constitue un élément transversal du laboratoire.
+Cette section regroupe les mesures de sécurité mises en place dans le laboratoire UniService.
 
-L'objectif est d'intégrer progressivement les principes de sécurité dans l'administration de l'infrastructure.
-
----
-
-## 2. Objectifs
-
-- Protéger les comptes utilisateurs
-- Limiter les privilèges
-- Contrôler les accès
-- Sécuriser les serveurs
-- Sécuriser les postes clients
-- Réduire les risques liés aux mauvaises configurations
-- Surveiller les événements importants
+L'objectif est de sécuriser progressivement les systèmes, les comptes, les accès et les services de l'infrastructure.
 
 ---
 
-## 3. Active Directory
+## 2. Active Directory
 
-Les mesures étudiées comprennent :
+La sécurité du domaine **uniservice.local** repose notamment sur :
 
-- Politiques de mots de passe
-- Groupes de sécurité
-- Organisation par OU
-- GPO
-- Principe du moindre privilège
-- Gestion des comptes administrateurs
-
----
-
-## 4. Sécurité réseau
-
-Les principaux éléments étudiés sont :
-
-- Isolation du laboratoire
-- Contrôle des communications
-- Segmentation
-- Analyse des flux
-- Vérification des ports et services
+* La gestion des comptes utilisateurs
+* Les groupes de sécurité
+* Les unités d'organisation (OU)
+* Les stratégies de groupe (GPO)
+* Les politiques de mots de passe
+* La gestion des comptes administrateurs
+* Le principe du moindre privilège
 
 ---
 
-## 5. Sécurité Linux
+## 3. Sécurité des postes Windows
 
-Les sujets étudiés pourront inclure :
+Les postes clients seront sécurisés à travers :
 
-- Permissions
-- Utilisateurs
-- Groupes
-- SSH
-- Services
-- Mises à jour
-- Journaux système
+* Les stratégies de sécurité
+* Les GPO
+* La gestion des droits utilisateurs
+* La limitation des privilèges administrateur
+* Les paramètres de sécurité Windows
+* La vérification de la configuration du poste
 
 ---
 
-## 6. Tests de sécurité
+## 4. Sécurité Linux
 
-Les tests seront réalisés dans le laboratoire afin de vérifier :
+La sécurité du serveur Linux sera basée sur :
 
-- Les permissions
-- Les accès
-- Les politiques appliquées
-- Les services exposés
-- Les configurations des systèmes
+* La gestion des utilisateurs
+* La gestion des groupes
+* Les permissions sur les fichiers et répertoires
+* La sécurisation de SSH
+* La gestion des services
+* Les mises à jour du système
+* La consultation des journaux système
+
+---
+
+## 5. Sécurité réseau
+
+Le laboratoire étant isolé, plusieurs éléments seront étudiés :
+
+* Isolation du réseau
+* Contrôle des communications
+* Segmentation du réseau
+* Vérification des ports ouverts
+* Identification des services accessibles
+* Analyse des flux réseau
+
+---
+
+## 6. Vérifications et tests
+
+Des tests seront réalisés afin de vérifier l'efficacité des mesures de sécurité.
+
+Les vérifications porteront notamment sur :
+
+* Les droits d'accès
+* Les permissions
+* Les comptes utilisateurs
+* Les groupes de sécurité
+* Les stratégies appliquées
+* Les services actifs
+* Les ports ouverts
+* Les configurations des systèmes
 
 ---
 
 ## 7. État
 
-| Élément | État |
-|---|---|
+| Élément              | État        |
+| -------------------- | ----------- |
 | Comptes utilisateurs | 🟡 En cours |
-| Groupes | 🟡 En cours |
-| GPO | 🔵 Prévu |
-| Permissions | 🟡 En cours |
-| Durcissement | 🔵 Prévu |
-| Tests de sécurité | 🔵 Prévu |
+| Groupes de sécurité  | 🟡 En cours |
+| GPO                  | 🔵 Prévu    |
+| Permissions          | 🟡 En cours |
+| Sécurité Windows     | 🔵 Prévu    |
+| Sécurité Linux       | 🔵 Prévu    |
+| Sécurité réseau      | 🔵 Prévu    |
+| Durcissement         | 🔵 Prévu    |
+| Tests de sécurité    | 🔵 Prévu    |
